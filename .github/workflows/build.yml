@@ -249,7 +249,7 @@ jobs:
       - uses: dev-drprasad/delete-older-releases@master
         if: ${{ github.event.inputs.oldreleases == 'true' }}
         with:
-          keep_latest: 1
+          keep_latest: 10
           delete_tags: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
